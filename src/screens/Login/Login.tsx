@@ -11,8 +11,7 @@ import {
 import React, { useState } from "react";
 import * as Yup from "yup";
 import { FontAwesome, MaterialIcons } from "@expo/vector-icons";
-import { LoginScreenProps, SignInType } from "./types";
-import { screens } from "../../constants";
+import { LoginScreenProps } from "./types";
 import { useAuth } from "../../hooks";
 import { useFormik } from "formik";
 
@@ -65,6 +64,7 @@ const Login = ({ navigation }: LoginScreenProps) => {
           textAlign="center"
           color="#EBE8E1"
           fontWeight={700}
+          testID="app-title"
         >
           Slocked
         </Text>
@@ -73,7 +73,9 @@ const Login = ({ navigation }: LoginScreenProps) => {
         <VStack justifyContent="center" w="100%">
           <Center p="14px">
             <FormControl isInvalid={!!getErrorMsg("email")} mb="6">
-              <FormControl.Label>Digite seu email:</FormControl.Label>
+              <FormControl.Label testID="email-label">
+                Digite seu email:
+              </FormControl.Label>
               <Input
                 placeholder="Email"
                 borderColor="#2486CE"
@@ -82,13 +84,16 @@ const Login = ({ navigation }: LoginScreenProps) => {
                 fontSize="16px"
                 onChangeText={handleChange("email")}
                 onBlur={handleBlur("email")}
+                testID="email-input"
               />
-              <FormControl.ErrorMessage>
+              <FormControl.ErrorMessage testID="email-error">
                 {getErrorMsg("email")}
               </FormControl.ErrorMessage>
             </FormControl>
             <FormControl mb="12" isInvalid={!!getErrorMsg("password")}>
-              <FormControl.Label>Digite sua senha:</FormControl.Label>
+              <FormControl.Label testID="password-label">
+                Digite sua senha:
+              </FormControl.Label>
               <Input
                 placeholder="Senha"
                 type={visibility ? "text" : "password"}
@@ -98,6 +103,7 @@ const Login = ({ navigation }: LoginScreenProps) => {
                 fontSize="16px"
                 onChangeText={handleChange("password")}
                 onBlur={handleBlur("password")}
+                testID="password-input"
                 rightElement={
                   <Icon
                     as={MaterialIcons}
@@ -109,7 +115,7 @@ const Login = ({ navigation }: LoginScreenProps) => {
                   />
                 }
               />
-              <FormControl.ErrorMessage>
+              <FormControl.ErrorMessage testID="password-error">
                 {getErrorMsg("password")}
               </FormControl.ErrorMessage>
             </FormControl>
@@ -123,6 +129,7 @@ const Login = ({ navigation }: LoginScreenProps) => {
                 onPress={() => handleSubmit()}
                 isDisabled={isSubmitting}
                 isLoading={isSubmitting}
+                testID="login-button"
               >
                 Login
               </Button>

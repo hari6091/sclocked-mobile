@@ -18,11 +18,21 @@ const UserHeader = () => {
     >
       <Icon as={FontAwesome} name="user-circle-o" size="12" color="#28374D" />
       <VStack>
-        <Text fontSize="18px" textAlign="center" color="#28374D">
+        <Text
+          fontSize="18px"
+          textAlign="center"
+          color="#28374D"
+          testID="username"
+        >
           {profile?.name ?? "Carregando..."}
         </Text>
         {profile?.matricula && (
-          <Text fontSize="18px" textAlign="center" color="#28374D">
+          <Text
+            fontSize="18px"
+            textAlign="center"
+            color="#28374D"
+            testID="matricula"
+          >
             {profile?.matricula ?? "Carregando..."}
           </Text>
         )}

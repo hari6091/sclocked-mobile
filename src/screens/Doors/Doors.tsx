@@ -55,6 +55,8 @@ const Doors = ({ navigation }: DoorsScreenProps) => {
   const handleAlterSalaState = async (salaOpt: ISalaOpt | undefined) => {
     if (salaOpt) {
       await openSala({ message: salaOpt.salaNumber });
+      await new Promise((resolve) => setTimeout(resolve, 300));
+      loadSalas();
     }
   };
 
@@ -76,11 +78,16 @@ const Doors = ({ navigation }: DoorsScreenProps) => {
           justifyContent="space-between"
         >
           <VStack maxW="80%">
-            <Text fontWeight={700} fontSize="20px" color="#FFFFFF">
+            <Text
+              fontWeight={700}
+              fontSize="20px"
+              color="#FFFFFF"
+              testID="sala-title"
+            >
               {item?.name + " / " + item.numero ?? "Carregando..."}
             </Text>
             <HStack alignItems="center" space="12px">
-              <Text fontSize="16px" color="#FFFFFF">
+              <Text fontSize="16px" color="#FFFFFF" testID="sala-status">
                 {item?.status.toUpperCase() ?? "Carregando..."}
               </Text>
               <Flex
@@ -116,12 +123,12 @@ const Doors = ({ navigation }: DoorsScreenProps) => {
     <>
       <UserHeader />
       <Center flex={1} flexDirection="column" safeArea px="10" bg="#FFFFFF">
-        <Text fontSize="24px" color="#28374D" mb="12px">
+        <Text fontSize="24px" color="#28374D" mb="12px" testID="screen-title">
           Salas que você tem acesso
         </Text>
 
         <FlatList
-          testID="feed-items"
+          testID="sala-items"
           flex={1}
           data={salas}
           refreshing={isLoading}
@@ -139,6 +146,7 @@ const Doors = ({ navigation }: DoorsScreenProps) => {
         leastDestructiveRef={cancelRef}
         isOpen={isOpen}
         onClose={onClose}
+        testID="alert"
       >
         <AlertDialog.Content>
           <AlertDialog.CloseButton />
@@ -161,6 +169,7 @@ const Doors = ({ navigation }: DoorsScreenProps) => {
                 colorScheme="coolGray"
                 onPress={onClose}
                 ref={cancelRef}
+                testID="cancel-alert"
               >
                 Cancelar
               </Button>
@@ -172,6 +181,7 @@ const Doors = ({ navigation }: DoorsScreenProps) => {
                   handleAlterSalaState(salaOpt);
                   onClose();
                 }}
+                testID="button-alert"
               >
                 {salaOpt?.status === "inativo" ? "Abrir Sala" : "Fechar sala"}
               </Button>

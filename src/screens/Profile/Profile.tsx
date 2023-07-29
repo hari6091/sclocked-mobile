@@ -50,20 +50,20 @@ const Profile = ({ navigation }: ProfileScreenProps) => {
           <Text color="#FFFFFF" fontSize="24px" fontWeight={700}>
             Nome do Usuário
           </Text>
-          <Text color="#FFFFFF" fontSize="24px">
+          <Text color="#FFFFFF" fontSize="24px" testID="profile-username">
             {profile?.name ?? "Carregando..."}
           </Text>
           <Text color="#FFFFFF" fontSize="24px" fontWeight={700}>
             Cargo / Nível de acesso
           </Text>
-          <Text color="#FFFFFF" fontSize="24px">
+          <Text color="#FFFFFF" fontSize="24px" testID="profile-cargo">
             {profile?.disciplinaOUcargo ?? "Carregando..."} /{" "}
             {profile?.role === "admin" ? "Administrador" : "Usuário comum"}
           </Text>
           <Text color="#FFFFFF" fontSize="24px" fontWeight={700}>
             Ingresso no Sistema
           </Text>
-          <Text color="#FFFFFF" fontSize="24px">
+          <Text color="#FFFFFF" fontSize="24px" testID="profile-data-criado">
             {dataCadastro(profile?.createdAt)}
           </Text>
           <Button
@@ -71,6 +71,7 @@ const Profile = ({ navigation }: ProfileScreenProps) => {
             bg="#2486CE"
             _text={{ fontWeight: 700, fontSize: "24px" }}
             onPress={handleNavigateLogin}
+            testID="profile-logout-button"
           >
             Sair
           </Button>

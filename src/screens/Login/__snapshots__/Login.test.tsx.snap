@@ -1,0 +1,409 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login screen renders screen, and email and password fields correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#28374D",
+        "borderBottomLeftRadius": 18,
+        "borderBottomRightRadius": 18,
+        "flexDirection": "row",
+        "height": "20%",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text />
+    <View
+      dataSet={{}}
+      style={{}}
+    />
+    <Text
+      dataSet={{}}
+      style={
+        {
+          "backgroundColor": undefined,
+          "color": "#EBE8E1",
+          "fontFamily": undefined,
+          "fontSize": 36,
+          "fontStyle": "normal",
+          "fontWeight": "700",
+          "letterSpacing": 0,
+          "lineHeight": 54,
+          "textAlign": "center",
+          "textDecorationLine": undefined,
+        }
+      }
+      testID="app-title"
+    >
+      Slocked
+    </Text>
+  </View>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "display": "flex",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "paddingLeft": 40,
+        "paddingRight": 40,
+      }
+    }
+  >
+    <View
+      dataSet={{}}
+      style={
+        {
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        dataSet={{}}
+        style={
+          {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
+            "paddingBottom": 14,
+            "paddingLeft": 14,
+            "paddingRight": 14,
+            "paddingTop": 14,
+          }
+        }
+      >
+        <View
+          dataSet={{}}
+          isInvalid={false}
+          style={
+            {
+              "marginBottom": 24,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            dataSet={{}}
+            feedbackId="field-3-feedback"
+            hasFeedbackText={true}
+            hasHelpText={false}
+            helpTextId="field-3-helptext"
+            isDisabled={false}
+            isInvalid={false}
+            isReadOnly={false}
+            isRequired={false}
+            labelId="field-3-label"
+            nativeID="field-3-label"
+            setHasFeedbackText={[Function]}
+            setHasHelpText={[Function]}
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginBottom": 4,
+                "marginTop": 4,
+              }
+            }
+            testID="email-label"
+          >
+            <Text
+              dataSet={{}}
+              style={
+                {
+                  "backgroundColor": undefined,
+                  "color": "#737373",
+                  "fontFamily": undefined,
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 21,
+                  "textDecorationLine": undefined,
+                }
+              }
+            >
+              Digite seu email:
+            </Text>
+          </View>
+          <View
+            dataSet={{}}
+            isFocused={false}
+            style={
+              {
+                "alignItems": "center",
+                "borderColor": "#2486CE",
+                "borderRadius": 16,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 64,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <TextInput
+              accessibilityDescribedBy="field-3-feedback"
+              accessible={true}
+              dataSet={{}}
+              disabled={false}
+              editable={true}
+              isRequired={false}
+              nativeID="field-3-input"
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              onKeyPress={[Function]}
+              placeholder="Email"
+              placeholderTextColor="#a3a3a3"
+              readOnly={false}
+              required={false}
+              secureTextEntry={false}
+              style={
+                {
+                  "backgroundColor": "transparent",
+                  "color": "#171717",
+                  "flex": 1,
+                  "fontFamily": undefined,
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "height": "100%",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                  "width": "100%",
+                }
+              }
+              testID="email-input"
+            />
+          </View>
+        </View>
+        <View
+          dataSet={{}}
+          isInvalid={false}
+          style={
+            {
+              "marginBottom": 48,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            dataSet={{}}
+            feedbackId="field-4-feedback"
+            hasFeedbackText={true}
+            hasHelpText={false}
+            helpTextId="field-4-helptext"
+            isDisabled={false}
+            isInvalid={false}
+            isReadOnly={false}
+            isRequired={false}
+            labelId="field-4-label"
+            nativeID="field-4-label"
+            setHasFeedbackText={[Function]}
+            setHasHelpText={[Function]}
+            style={
+              {
+                "flexDirection": "row",
+                "justifyContent": "flex-start",
+                "marginBottom": 4,
+                "marginTop": 4,
+              }
+            }
+            testID="password-label"
+          >
+            <Text
+              dataSet={{}}
+              style={
+                {
+                  "backgroundColor": undefined,
+                  "color": "#737373",
+                  "fontFamily": undefined,
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "500",
+                  "letterSpacing": 0,
+                  "lineHeight": 21,
+                  "textDecorationLine": undefined,
+                }
+              }
+            >
+              Digite sua senha:
+            </Text>
+          </View>
+          <View
+            dataSet={{}}
+            isFocused={false}
+            style={
+              {
+                "alignItems": "center",
+                "borderColor": "#2486CE",
+                "borderRadius": 16,
+                "borderWidth": 1,
+                "flexDirection": "row",
+                "height": 64,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <TextInput
+              accessibilityDescribedBy="field-4-feedback"
+              accessible={true}
+              dataSet={{}}
+              disabled={false}
+              editable={true}
+              isRequired={false}
+              nativeID="field-4-input"
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              onKeyPress={[Function]}
+              placeholder="Senha"
+              placeholderTextColor="#a3a3a3"
+              readOnly={false}
+              required={false}
+              secureTextEntry={true}
+              style={
+                {
+                  "backgroundColor": "transparent",
+                  "color": "#171717",
+                  "flex": 1,
+                  "fontFamily": undefined,
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "height": "100%",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                  "width": "100%",
+                }
+              }
+              testID="password-input"
+            />
+            <View
+              dataSet={{}}
+              style={{}}
+            />
+            <Text />
+          </View>
+        </View>
+        <View
+          dataSet={{}}
+          style={
+            {
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityRole="button"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            colorScheme="primary"
+            dataSet={{}}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#2486CE",
+                "borderRadius": 30,
+                "flexDirection": "row",
+                "height": 64,
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 12,
+                "paddingRight": 12,
+                "paddingTop": 10,
+                "width": "100%",
+              }
+            }
+            testID="login-button"
+          >
+            <View
+              dataSet={{}}
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+              test={true}
+            >
+              <View
+                dataSet={{}}
+                style={{}}
+              >
+                <Text
+                  dataSet={{}}
+                  style={
+                    {
+                      "backgroundColor": undefined,
+                      "color": "#fafafa",
+                      "fontFamily": undefined,
+                      "fontSize": 22,
+                      "fontStyle": "normal",
+                      "fontWeight": "700",
+                      "letterSpacing": 0,
+                      "lineHeight": 33,
+                      "textDecorationLine": undefined,
+                    }
+                  }
+                >
+                  Login
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RNCSafeAreaProvider>
+`;

@@ -7,7 +7,6 @@ import {
 import { screens } from "../constants";
 
 export type MainTabParamList = {
-  [screens.HOME]: undefined;
   [screens.PROFILE]: undefined;
   [screens.DOOR]: undefined;
 };

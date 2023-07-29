@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserHeader renders without errors 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    dataSet={{}}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "flexDirection": "row",
+        "height": "17%",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text />
+    <View
+      dataSet={{}}
+      style={
+        {
+          "width": 22,
+        }
+      }
+    />
+    <View
+      dataSet={{}}
+      style={{}}
+    >
+      <Text
+        dataSet={{}}
+        style={
+          {
+            "backgroundColor": undefined,
+            "color": "#28374D",
+            "fontFamily": undefined,
+            "fontSize": 18,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "lineHeight": 27,
+            "textAlign": "center",
+            "textDecorationLine": undefined,
+          }
+        }
+        testID="username"
+      >
+        John Doe
+      </Text>
+      <View
+        dataSet={{}}
+        style={{}}
+      />
+      <Text
+        dataSet={{}}
+        style={
+          {
+            "backgroundColor": undefined,
+            "color": "#28374D",
+            "fontFamily": undefined,
+            "fontSize": 18,
+            "fontStyle": "normal",
+            "fontWeight": "400",
+            "letterSpacing": 0,
+            "lineHeight": 27,
+            "textAlign": "center",
+            "textDecorationLine": undefined,
+          }
+        }
+        testID="matricula"
+      >
+        12345
+      </Text>
+    </View>
+  </View>
+</RNCSafeAreaProvider>
+`;
